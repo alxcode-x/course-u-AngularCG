@@ -1,0 +1,9 @@
+<button class="btn btn-primary" (click)="onToggle()">Display details</button>
+<span *ngIf="showText">{{text}}</span>
+<ul *ngFor="let item of logs">
+    <li  
+        [ngStyle]="{background: item >= 5 ? 'blue' : 'transparent'}"
+        [ngClass]="{'text-color': item >= 5}" 
+    >{{item}}
+    </li>
+</ul>

@@ -2,8 +2,5 @@
 <input type="text" name="userName"  [(ngModel)]="userName"/>
 <p>User name: {{userName}}</p>
 
-<button 
-    class="btn btn-primary" 
-    [disabled]="!onEnableButton()"
-    (click)="onResetUser()"
-    >Reset</button>
+<button class="btn btn-primary" [disabled]="!onEnableButton()" [disabled]="!onEnableButton()" (click)="onResetUser()">Reset</button>
+<!-- <button class="btn btn-primary" [disabled]="userName === ''" (click)="onResetUser()">Reset</button> *another easier way -->
